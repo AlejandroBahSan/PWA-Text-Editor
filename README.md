@@ -1,4 +1,4 @@
-# Social-Network-API
+# PWA Text Editor
  ### ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
   ## Table of Contents:
   - #### [Installation](#prerequisites)
@@ -18,33 +18,31 @@
   ### You must install the following for this app to function:
   #### To use this application, you will need to first clone this repository then once it is in cloned in your computer and you've open it in your source-code editor you will need to proceed to run the following commands
 ```
-npm i - to install our dependencies
+npm run start:dev - this will install our dependencies, run the server localhost:3001 and create or 'dist' files
 ```
-then we can run our application server with the following options:
-```
-npm start - to run our application server.
-```
-for Devs.
-```
-npm run watch  - to run the application server with nodemon
-```
-  
-After this you can start using your REST client. For more please watch the following video by clicking on the Google Drive link down below.
 
-[![Google Drive](https://img.shields.io/static/v1?style=for-the-badge&message=Google+Drive&color=4285F4&logo=Google+Drive&logoColor=FFFFFF&label=Walkthrough.Start.Server)](https://drive.google.com/file/d/12g9Fup1IpzmT9GIPLJFqYJ3H-hToUq7m/view?usp=sharing)
+After this you can start using the app on `localhost:3001`
 
-[![YouTube](https://img.shields.io/static/v1?style=for-the-badge&message=YouTube&color=FF0000&logo=YouTube&logoColor=FFFFFF&label=Walkthrough.Routes)](https://www.youtube.com/watch?v=ZlPKFc937a8)
+Or if you just want to test the app, please click on the down bellow Heroku link. 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://pwa-text-editing.herokuapp.com/)
 
   
 ## Usage:
-Social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list..
+
+A single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
 
 ## Code Snippets
 
  <p float="center">
-  <img align="center" src="https://github.com/AlejandroBahSan/Social-Network-API/blob/master/Assets/userRoutes.png" width="400" height="550" />
-  <img align="right"  src="https://github.com/AlejandroBahSan/Social-Network-API/blob/master/Assets/thoughtsRoutes.png" width="400" height="550" />
+  <img align="center" src="https://github.com/AlejandroBahSan/PWA-Text-Editor/blob/master/Assets/install.png" width="400" height="550" />
+  <img align="right"  src="https://github.com/AlejandroBahSan/PWA-Text-Editor/blob/master/Assets/database.png" width="400" height="550" />
+ </p>
+ 
+ <p float="center">
+  <img align="center" src="https://github.com/AlejandroBahSan/PWA-Text-Editor/blob/master/Assets/webpack.png" width="400" height="550" />
+  <img align="right"  src="https://github.com/AlejandroBahSan/PWA-Text-Editor/blob/master/Assets/webpack2.png" width="400" height="550" />
  </p>
 
 <p>
