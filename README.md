@@ -1,5 +1,9 @@
 # PWA Text Editor
- ### ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://choosealicense.com/licenses/mit/)
+
+## Usage:
+A single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+
   ## Table of Contents:
   - #### [Installation](#prerequisites)
   - #### [Usage](#usage)
@@ -11,8 +15,8 @@
   - #### [Question](#questions)
 
  ## Prerequisites
- * [![Node.js](https://img.shields.io/static/v1?style=for-the-badge&message=Node.js&color=339933&logo=Node.js&logoColor=FFFFFF&label=)](https://nodejs.org/)
- * [![MongoDB](https://img.shields.io/static/v1?style=for-the-badge&message=MongoDB&color=47A248&logo=MongoDB&logoColor=FFFFFF&label=)](https://www.mongodb.com/)
+ * [![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)](https://expressjs.com/)
+ * [![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)](https://webpack.js.org/)
   
   ### Installation:
   ### You must install the following for this app to function:
@@ -23,16 +27,11 @@ npm run start:dev - this will install our dependencies, run the server localhost
 
 After this you can start using the app on `localhost:3001`
 
-Or if you just want to test the app, please click on the down bellow Heroku link. 
+#### To only test the app ↓
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://pwa-text-editing.herokuapp.com/)
 
   
-## Usage:
-
-A single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
-
-
 ## Code Snippets
 
  <p float="center">
@@ -48,15 +47,12 @@ A single-page application that meets the PWA criteria. Additionally, it will fea
 <p>
  
 ## Quick Demo
- #### [![Google Drive](https://img.shields.io/static/v1?style=for-the-badge&message=Google+Drive&color=4285F4&logo=Google+Drive&logoColor=FFFFFF&label=Walkthrough.Start.Server)](https://drive.google.com/file/d/12g9Fup1IpzmT9GIPLJFqYJ3H-hToUq7m/view?usp=sharing)
+ #### [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://pwa-text-editing.herokuapp.com/)
+ ![Demo](https://github.com/AlejandroBahSan/PWA-Text-Editor/blob/master/Assets/Demo2.gif)
 
-[![YouTube](https://img.shields.io/static/v1?style=for-the-badge&message=YouTube&color=FF0000&logo=YouTube&logoColor=FFFFFF&label=Walkthrough.Routes)](https://www.youtube.com/watch?v=ZlPKFc937a8)
- ![Demo](https://github.com/AlejandroBahSan/Social-Network-API/blob/master/Assets/SocialNetworkAPI-Demo.gif)
-</p>
- 
  
   ## Project License:
-  ### MIT https://choosealicense.com/licenses/mit/
+  ### [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://choosealicense.com/licenses/mit/)
   ### Copyright (c) <year> <copyright holders>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -80,16 +76,35 @@ A single-page application that meets the PWA criteria. Additionally, it will fea
   ## Collaborators:
   #### Alejandro Bahena.
   ## Tools:
-  ### ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) [![MongoDB](https://img.shields.io/static/v1?style=for-the-badge&message=MongoDB&color=47A248&logo=MongoDB&logoColor=FFFFFF&label=)](https://www.mongodb.com/)
+  ### ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
  ## Built with:
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [NodeJS](https://nodejs.org/)
  
  * Dependencies:
   ```
-    "express": "^4.17.1",
-    "moment": "^2.29.4",
-    "mongoose": "^6.0.13"
+    "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/runtime": "^7.15.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.2.4"
+  },
+  "dependencies": {
+    "code-mirror-themes": "^1.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "idb": "^6.1.2"
+  }
   ```
  
   ## Questions:
