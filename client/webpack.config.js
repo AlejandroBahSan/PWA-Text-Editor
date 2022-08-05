@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
@@ -24,8 +25,8 @@ module.exports = () => {
       }),
       new MiniCssExtractPlugin(),
       new InjectManifest({
-        swSrc: path.resolve(__dirname, "src/src-sw.js"),
-        swDest: "src-sw.js",
+        swSrc: path.resolve(__dirname, './src-sw.js'),
+        swDest: path.resolve(__dirname, '../client/dist/src-sw.js')
       }),
       new WebpackPwaManifest({
         fingerprints: false,
@@ -41,11 +42,16 @@ module.exports = () => {
           {
             src: path.resolve(__dirname, 'src/images/logo.png'),
             sizes: [96, 128, 192, 384, 512],
-            destination: path.join('assets', 'icons'),
+            destination: path.join('assets', 'icons')
           },
         ],
-      })
-
+      }),
+      new CopyWebpackPlugin({ 
+        patterns: [ 
+         // relative path is from src
+         { from: './favicon.ico' }, 
+        ]
+     })
     ],
 
     module: {
